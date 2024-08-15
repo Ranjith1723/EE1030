@@ -1,0 +1,328 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{CHAPTER - 19\\Differential Equations}
+\author{EE24BTECH11039 - Ranjith}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+\section{MCQ's with One Correct Answer}
+
+\begin{enumerate}
+\item The differential equation whose solution is $Ax^2 + By^2 = 1$ where A and B are arbitrary constants is of 
+
+
+
+\begin{enumerate}
+\item second order and second degree 
+\item first order and second degree 
+\item first order and first degree 
+\item second order and first degree 
+
+\end{enumerate}
+\hfill
+{[2006]}
+\item The differential equations of all the circles passing through the origin and having their centres on x-axis is
+
+\begin{enumerate}
+\item $ y^2=x^2 + 2xy\diff{y}{x} $
+\item $ y^2=x^2 - 2xy\diff{y}{x}$
+\item $ x^2=y^2 + xy\diff{y}{x}$
+\item $ x^2 =y^2 + 3xy\diff{y}{x}$
+\end{enumerate}
+\hfill
+{{[2007]}}
+
+
+
+
+\item The solution of the differential equation $ \diff{y}{x}=\frac{x+y}{x}$ satisfying the condition $ y(1)=1 $ is
+\begin{enumerate}
+\item $ y=  \ln{x}+x $
+\item $y=x\ln{x}+x^2$
+\item $ y=xe^{(x-1)} $
+\item $ y=x \ln{x}+ x$
+\end{enumerate}
+\hfill
+{[2008]}
+
+
+\item The differential equation which represents the family of curves $y= c{_1}e^{c_2}x , where c{_1} and c{_2}$ are arbitrary constants,is
+\begin{enumerate}
+    \item $\frac{d^{2}y}{dx^{2}}$= y\diff{y}{x}
+
+    
+    \item $y\frac{d^{2}y}{dx^{2}}$=\diff{y}{x} 
+
+    
+    \item $y\frac{d^{2}y}{dx^{2}}=(\diff{y}{x})^2$
+    
+    \item $\diff{y}{x}=y^2$
+\end{enumerate}
+\hfill
+{[2009]}
+\item Solutions of the differential equation $\cos{x} d{y}=y(\sin{x}-y)d{x},0<x<\frac{\pi}{2}$ is
+\begin{enumerate}
+
+\item $ y\sec{x}=\tan{x}+c$
+\item $y\tan{x}=\sec{x}+c$
+\item $\tan{x}=(\sec{x}+c)y$
+\item $\sec{x}=(\tan{x}+c)y$
+\hfill
+{{[2010]}}
+
+
+
+
+    
+\end{enumerate}
+
+\item If $\frac{d^{2}y}{dx^{2}}=y+3$ and $y(0)=2$, then $y(\ln{2}$ is equal to:
+\begin{enumerate}
+\item $ 5 $
+\item $ 13 $
+\item $ -2 $
+\item $ 7 $
+\end {enumerate}
+
+\hfill
+{{[2011]}}
+
+
+
+\item Let  be the purchase value of an equipment and $V(t)$ be the value after it has been used for t years. The value V(t) depreciates at a rate given by differential equation $\diff{V_{(t})}{t}=-k(T-t).$ where k is a constant and T is the total life in years of the equipment.Then the scrap value $V(T)$ of the equipment is 
+
+\begin {enumerate}
+
+\item $ l -\frac{kT^2}{2}$
+\item $ l - \frac{k(T-t)^2}{2}$
+\item $ e^{-kT}$
+\item $ T^2-\frac{1}{k}$
+
+\end{enumerate}
+\hfill
+{[2011]}
+
+\item The population $p(t)$ at time of a certain mouse species satisfies the differential equation $\diff{p{_(t)}}{t}= 0.5p(t)- 450$.If $p(0)=850$,then the time at which the population becomes zero is:
+\begin{enumerate}
+    \item $ 2\ln{18}$
+    \item $ 2\ln{9}$
+    \item $ \frac{1}{2}\ln{18}$
+\end{enumerate}
+\hfill
+{[2012]}
+
+\item At present , a firm is manufacturing 2000times.It is estimated that the rate of change of production P with respect to additional number of workers $x$ is given by $\diff{P}{x}=100-12\sqrt{x}$.If the firm employs 25 more workers,then the new level of production of items is
+
+
+\begin{enumerate}
+
+    \item $2500$
+    \item$3000$
+    \item$3500$
+    \item$4500$
+\end{enumerate}
+
+\hfill
+{[JEE M 2013]}
+
+
+\item Let the population of rabbits surviving at time t be governed by the differential equation $\diff{p{_(t)}}{t}=\frac{1}{2}p(t)-200$.If$P(0)=100,then p(t)equals$:
+\begin{enumerate}
+    \item $ 600-500e^\frac{t}{2}$
+    \item $ 400-300e^\frac{-t}{2}$
+    \item $ 400-300e^\frac{t}{2}$
+    \item $ 300-200e^\frac{-t}{2}$
+\end{enumerate}
+\hfill
+{[JEE M 2014]}
+\item Let $y(x)$ be the solution of the differential equation $(x\log{x})\diff{y}{x} + y = 2x \log{x},(x\geq 1)$.Then $y(e)$ is equal to:
+\begin{enumerate}
+    \item $ 2 $
+    \item $ 2e $
+    \item $ e $
+    \item $ 0 $
+\end{enumerate}
+\hfill
+{[JEE M 2015]}
+
+\item If the curve $ y=f(x)$ passes through the point $ (1,1)$ and satisfies the differential equation,$ y(1+xy)d{x}=xd{y},$ then $ f(\frac{-1}{2})$ is equals to 
+\begin{enumerate}
+\item $ \frac{2}{5}$
+
+
+
+\item $ \frac{4}{5}$
+
+
+
+\item $ \frac{2}{5}$
+
+
+
+\item $ \frac{4}{5}$
+
+
+\end{enumerate}
+
+\hfill
+{[JEE M 2016]}
+
+\item If $ (24 \sin{x})\diff{y}{x}+ (y+1)\cos{x}=0$ and $y(0)=1$ then $y(\frac{\pi}{2})$ is equal to
+\begin{enumerate}
+    \item $\frac{4}{3}$
+    \item $\frac{1}{3}$
+    \item $\frac{2}{3}$
+    \item $\frac{1}{3}$
+    
+\end{enumerate}
+\hfill
+{[JEE M 2017]}
+
+
+\item Let $ y=y(x)$ be the solution of the differential equation $\sin{x}\diff{y}{x}+y\cos{x}=4x$,$x\in(0,2)$.If $y(\frac{\pi}{2})=0$,then $y(\frac{\pi}{6})$ is equal to
+\begin{enumerate}
+    \item $ \frac{-8}{9\sqrt{3}}\pi^2$
+    \item $ \frac{-8}{9}\pi^2$
+    \item $\frac{-4}{9}\pi^2$
+    \item $ \frac{4}{9\sqrt{3}}\pi^2 $
+\end{enumerate}
+\hfill
+{[JEE M 2018]}
+\item If $ y=y(x)$ is the differential equation $ \sin{x}\diff{y}{x}+2y=x^2$ satisfying $y(a)=1$,then $y(\frac{1}{2})$ is equal to
+\begin{enumerate}
+    \item $ \frac{7}{64}$
+
+    
+    \item $ \frac{1}{4}$
+
+    
+    \item $ \frac{49}{16}$
+    
+    \item $ \frac{13}{16}$
+    
+    
+\end{enumerate}
+\hfill
+{[JEE M 2019-9April(M)]}
+\item The solution of the differential equation $ x\diff{y}{x}+2y=x^2 (x\neq0)$with$ y(1)=1,is:$
+\begin{enumerate}
+    \item $ y=\frac{4}{5}x^3+\frac{1}{5x^2}$
+
+\item $ y=\frac{x^3}{5}+\frac{1}{5x^2}$
+\item $ y=\frac{x^2}{4}+\frac{3}{4x^2}$
+\item $ y=\frac{3}{4}x^2+\frac{1}{4x^2}$
+\end{enumerate}
+\hfill
+{[JEE M 2019-9April(M)]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
