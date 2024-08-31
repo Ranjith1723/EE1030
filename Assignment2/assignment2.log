@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.10)  31 AUG 2024 20:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.10)  31 AUG 2024 21:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**assignment2.tex
+**main.tex
 (./assignment2.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
@@ -1658,8 +1658,7 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 3
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-)
-No file assignment2.aux.
+) (./assignment2.aux)
 \openout1 = `assignment2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 39.
@@ -1855,6 +1854,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 39.
 LaTeX Info: Redefining \pageref on input line 39.
 LaTeX Info: Redefining \nameref on input line 39.
+
+(./assignment2.out) (./assignment2.out)
 \@outlinefile=\write5
 \openout5 = `assignment2.out'.
 
@@ -1933,23 +1934,17 @@ n of the dif-fer-en-tial equa-tion $[] [] + \OML/txmi/m/it/10 y \OT1/txr/m/n/10
  []
 
 [2] [3] (./assignment2.aux)
-
-Package rerunfilecheck Warning: File `assignment2.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `assignment2.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  096A3C9CDA87063DE3E8DA0C5AA7A0C3;208.
+Package rerunfilecheck Info: File `assignment2.out' has not changed.
+(rerunfilecheck)             Checksum: 096A3C9CDA87063DE3E8DA0C5AA7A0C3;208.
  ) 
 Here is how much of TeX's memory you used:
- 49757 strings out of 478287
- 1162862 string characters out of 5849289
- 1640235 words of memory out of 5000000
- 67068 multiletter control sequences out of 15000+600000
+ 49766 strings out of 478287
+ 1162975 string characters out of 5849289
+ 1640388 words of memory out of 5000000
+ 67070 multiletter control sequences out of 15000+600000
  536869 words of font info for 165 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 106i,6n,107p,432b,898s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,6n,107p,425b,898s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1958,10 +1953,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on assignment2.pdf (3 pages, 54804 bytes).
+Output written on assignment2.pdf (3 pages, 55436 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
+ 191 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
  84 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 
