@@ -31,7 +31,8 @@
 \usepackage{color}                                            
 \usepackage{array}                                            
 \usepackage{longtable}                                       
-\usepackage{calc}                                             
+\usepackage{calc}
+\usepackage{xparse}
 \usepackage{multirow}                                         
 \usepackage{hhline}                                           
 \usepackage{ifthen}                                           
@@ -105,7 +106,7 @@
 {[2008]}
 
 
-\item The differential equation which represents the family of curves $y= c{_1}e^{c_2}x$ , where $c{_1}$ and $c{_2}$ are arbitrary constants,is
+\item The differential equation which represents the family of curves $y= c{_1}e^{c_2}x$, where $c{_1}$ and $c{_2}$ are arbitrary constants, is
 \begin{multicols}{2}
  \begin{enumerate}
     \item $\frac{d^{2}y}{dx^{2}}$= y\diff{y}{x}
@@ -151,7 +152,7 @@
 
 
 
-\item Let  be the purchase value of an equipment and $V\brak{t}$ be the value after it has been used for t years. The value V\brak{t} depreciates at a rate given by differential equation $\diff{V_{\brak{t}}}{t}=-k\brak{T-t}.$ where k is a constant and T is the total life in years of the equipment.Then the scrap value $V\brak{T}$ of the equipment is 
+\item Let be the purchase value of an equipment and $V\brak{t}$ be the value after it has been used for t years. The value V\brak{t} depreciates at a rate given by differential equation \diff{V_{\brak{t}}}{t}=-k\brak{T-t}. where k is a constant and T is the total life in years of the equipment. Then the scrap value $V\brak{T}$ of the equipment is 
 \begin{multicols}{2}
  \begin {enumerate}
 
@@ -165,7 +166,7 @@
 \hfill
 {[2011]}
 
-\item The population $p\brak{t}$ at time of a certain mouse species satisfies the differential equation $\diff{p_\brak{t}}{t}= 0.5p\brak{t}- 450$. If $p\brak{0}=850$,then the time at which the population becomes zero is:
+\item The population $p\brak{t}$ at time of a certain mouse species satisfies the differential equation $\diff{p\brak{t}}{t}= 0.5p\brak{t}- 450$. If $p\brak{0}=850$,then the time at which the population becomes zero is:
 \begin{multicols}{2}
  \begin{enumerate}
     \item $ 2\ln{18}$
@@ -176,7 +177,7 @@
 \hfill
 {[2012]}
 
-\item At present , a firm is manufacturing $2000$ times.It is estimated that the rate of change of production $P$ with respect to additional number of workers $x$ is given by $\diff{P}{x}=100-12\sqrt{x}$.If the firm employs 25 more workers,then the new level of production of items is
+\item At present, a firm is manufacturing $2000$ times. It is estimated that the rate of change of production $P$ with respect to additional number of workers $x$ is given by $\diff{P}{x}=100-12\sqrt{x}$. If the firm employs 25 more workers, then the new level of production of items is
 
 \begin{multicols}{2}
     
@@ -194,7 +195,7 @@
 {[JEE M 2013]}
 
 
-\item Let the population of rabbits surviving at time t be governed by the differential equation $\diff{p_\brak{t}}{t}$=$\frac{1}{2}p\brak{t}-200$.IfP\brak{0}=100,then p\brak{t} equals:
+\item Let the population of rabbits surviving at time t be governed by the differential equation $\diff{p\brak{t}}{t}$=$\frac{1}{2}p\brak{t}-200$. If P\brak{0}=100, then p\brak{t} equals:
 
 \begin{multicols}{2}
  \begin{enumerate}
@@ -206,7 +207,7 @@
 \end{multicols}
 \hfill
 {[JEE M 2014]}
-\item Let $y\brak{x}$ be the solution of the differential equation $\brak{x\log{x}}\diff{y}{x} + y = 2x \log{x},\brak{x\geq 1}$.Then $y\brak{e}$ is equal to:
+\item Let $y\brak{x}$ be the solution of the differential equation $\brak{x\log{x}}\diff{y}{x} + y = 2x \log{x},\brak{x\geq 1}$. Then $y\brak{e}$ is equal to:
 \begin{multicols}{2}
  \begin{enumerate}
     \item $ 2 $
@@ -218,7 +219,7 @@
 \hfill
 {[JEE M 2015]}
 
-\item If the curve $ y=f\brak{x}$ passes through the point $ \brak{1,1}$ and satisfies the differential equation,$ y\brak{1+xy}d{x}=xd{y},$ then $ f\brak{\frac{-1}{2}}$ is equals to 
+\item If the curve $ y=f\brak{x}$ passes through the point $ \brak{1,1}$ and satisfies the differential equation, $ y\brak{1+xy}d{x}=xd{y}$, then $ f\brak{\frac{-1}{2}}$ is equals to 
 \begin{multicols}{2}
  \begin{enumerate}
     \item $ \frac{2}{5}$
@@ -254,7 +255,7 @@
 {[JEE M 2017]}
 
 
-\item Let $ y=y\brak{x}$ be the solution of the differential equation $\sin{x}\diff{y}{x}+y\cos{x}=4x$,$x\in\brak{0,2}$.If $y\brak{\frac{\pi}{2}}=0$,then $y\brak{\frac{\pi}{6}}$ is equal to
+\item Let $ y=y\brak{x}$ be the solution of the differential equation $\sin{x}\diff{y}{x}+y\cos{x}=4x$, $x\in\brak{0,2}$. If $y\brak{\frac{\pi}{2}}=0$, then $y\brak{\frac{\pi}{6}}$ is equal to
 \begin{multicols}{2}
  \begin{enumerate}
     \item $ \frac{-8}{9\sqrt{3}}\pi^2$
@@ -283,7 +284,7 @@
 \end{multicols}
 \hfill
 {[JEE M 2019-9April(M)]}
-\item The solution of the differential equation $ x\diff{y}{x}+2y=x^2 \brak{x\neq0}$with$ y\brak{1}=1,is:$
+\item The solution of the differential equation $ x\diff{y}{x}+2y=x^2 \brak{x\neq0}$with$ y\brak{1}=1$, is:
 \begin{multicols}{2}
  \begin{enumerate}
     \item $ y=\frac{4}{5}x^3+\frac{1}{5x^2}$
