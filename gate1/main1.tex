@@ -1,0 +1,276 @@
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+
+%\usepackage[a5paper, top=10mm, bottom=10mm, left=10mm, right=10mm]{geometry}
+
+%
+\usepackage{gvv-book}
+\usepackage{gvv}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\makeindex
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+\onecolumn
+%paste here
+\title{2022-EE}
+\author{EE24BTECH11039 - Ranjith}
+\maketitle
+\begin {enumerate}
+\item As shown in the figure below,two concentric conducting spherical shells, centered at $r=0 $ and having radii  $r=c$ and $r=d $ are maintained at potentials such that the potentials V\brak{r} at $r=c$ is $V_1$ and V\brak{r} at $r =d$ is $V_2$.Assume that V\brak{r} depends only on r, where r is the radial distance.The expression for V\brak{r} in the region between $r=c$ and $r=d$ is 
+
+\begin{figure}[h]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (8.5,13.5) circle (2.25cm);
+\draw  (8.5,13.5) circle (1.25cm);
+\draw [->, >=Stealth] (8.5,13.5) -- (9.25,14.5);
+\draw [->, >=Stealth] (8.5,13.5) -- (10.75,14);
+\node [font=\small] at (8.5,14.25) {r=c};
+\node [font=\small] at (10.25,13.5) {r=d};
+\node [font=\small] at (8.25,16.25) {V(r) at r=d is $V_2$};
+\node [font=\small] at (8.25,15) {V(r) at r=c is $V_1$};
+\end{circuitikz}
+}%
+
+
+\end{figure}
+
+ \begin{enumerate}
+     \item $V\brak{r}= \frac{cd\brak{V_2-V_1}}{\brak{d-c}r}-\frac{V_1c+V_2d-2V_1d}{d-c}$ \\
+     \item $V\brak{r}=\frac{cd\brak{V_1-V_2}}{\brak{d-c}r}+\frac{V_2d-V_1c}{d-c}$ \\
+     \item $V\brak{r}= \frac{cd\brak{V_1-V_2}}{\brak{d-c}r}-\frac{V_1c-V_2c}{d-c}$ \\
+     \item $V\brak{r}=\frac{cd\brak{V_2-V_1}}{\brak{d-c}r}-\frac{V_2c-V_1c}{d-c}$ \\
+ \end{enumerate}
+ \item Let the probability density function of a random variable $x$ be given as \begin{align}
+     f\brak{x}=ae^{-2|x|}
+ \end{align}
+ The value of $'a'$ is \underline{\hspace{1cm}}. \\ \\
+ \item In the circuit shown below, the magnitude of the voltage $V_{1}$ in volts,across the $8 k\ohm$ resistor is \underline{\hspace{1cm}}.(round off to nearest integer) 
+ \begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (9.25,14.25) to[battery1] (9.25,11.75);
+\draw (9.25,14.25) to[R] (11.25,14.25);
+\draw (11.25,14.25) to[american controlled voltage source] (13.25,14.25);
+\draw (11.25,14.25) to[american controlled voltage source] (13.25,14.25);
+\draw (11.25,14.25) to[american controlled voltage source] (13.25,14.25);
+\draw (11.25,14.25) to[american controlled voltage source] (13.25,14.25);
+\draw [ line width=0.5pt](13.25,14.25) to[short] (13.25,11.75);
+\draw [ line width=0.5pt](13.25,14.25) to[american controlled current source] (15.25,14.25);
+\draw [ line width=0.5pt](15.25,14.25) to[R] (15.25,11.75);
+\draw [ line width=0.5pt](9.25,11.75) to[short] (15.25,11.75);
+\draw [line width=0.5pt, ->, >=Stealth] (10,13.75) -- (11,13.75);
+\node [font=\footnotesize] at (9.5,13.25) {+};
+\node [font=\footnotesize] at (9.75,13) {75V};
+\node [font=\small] at (10.25,14.75) {2k$\Omega$};
+\node [font=\footnotesize] at (12.25,15) {$0.5V_1$};
+\node [font=\footnotesize] at (14.25,15) {I};
+\node [font=\footnotesize] at (15.5,13.75) {+};
+\node [font=\small] at (15.5,12.5) {-};
+\node [font=\small] at (15.75,13) {$V_1$};
+\node [font=\small] at (14.75,13) {8k$\Omega$};
+\node [font=\small] at (10.25,13.5) {I};
+\end{circuitikz}
+}%
+\end{figure}
+ 
+
+\item Two generating units rated for $250$ MW and $400$ MW have governer speed regulations of 6\% and 6.4\%
+respectively, from no load to full load.Both the generating units are operating in parallel to share a load of $500 MW$.Assuming free governor action, the load shared in MW, by the $250 MW$ generating unit is \underline{\hspace{2cm}}.(round off to nearest integer) \\ \\
+
+\item A $2$ MVA, $11.2 kV$, 4-pole,$50$ Hz alternator has an inertia constant of $15$ MJ/MVA. If the input and output powers of the alternator arc $15$ MW and $10$MW, respectively, the angular acceleration in mechanical $degree/s^2$  is \underline{\hspace{2cm}}. (round off to the nearest integer)  \\ \\
+
+\item Consider an ideal full-bridge single-phase DC-AC inverter with a DC bus voltage magnitude of $1000$V.The inverter output voltage $V\brak{t}$ shown below, is obtained when diagonal switches of the inverter are switched with $50$ \% duty cycle.The inverter feeds a load with a sinusoidal current
+given by,i$\brak{t}=10\sin{\brak{{\omega}t-\frac{\pi}{3}}}A$, where  $\omega = \frac{2\pi}{T}$ . The active power,in watts,delivered to the load is \underline{\hspace{2cm}}. (round off to nearest integer) \\ \\ \\ \\
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [->, >=Stealth] (1.75,25.75) -- (2,35);
+\draw [line width=1pt, ->, >=Stealth] (1.25,30) -- (13.25,30);
+\draw [line width=1.4pt, short] (2,32) -- (5.75,32);
+\draw [line width=1.5pt, short] (5.75,32) -- (5.5,27.5);
+\draw [line width=1.4pt, short] (5.5,27.5) -- (9.75,27.5);
+\draw [line width=1.4pt, short] (9.75,27.5) -- (10,31.75);
+\draw [line width=1.6pt, short] (1.75,27.5) -- (2,32);
+\draw [line width=1.4pt, short] (0.25,27.5) -- (1.75,27.5);
+\draw [line width=1.4pt, short] (10,31.75) -- (12,31.75);
+\node [font=\normalsize] at (1.5,34.25) {\textit{{$v(t)$}}};
+\node [font=\normalsize] at (1.5,29.5) {\textit{0}};
+\node [font=\normalsize] at (5,29.75) {\textit{{$0.5T$}}};
+\node [font=\normalsize] at (9.5,29.75) {\textit{{T}}};
+\node [font=\normalsize] at (12.75,29.5) {\textit{{t(sec)}}};
+\end{circuitikz}
+}%
+\end{figure}
+
+\item For the ideal AC-DC rectifier circuit shown in the figure below, the load current magnitude is $I_{dc}=15$A and is ripple free. The thyristors are fired with a delay angle of $45\degree$. The amplitude of the fundamental component of the source current, in amperes,is\underline{\hspace{2cm}}. ( round off to two decimal places) \\ \\ 
+\begin{figure}[!ht]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [ line width=0.8pt](7.75,10) to[sinusoidal voltage source, sources/symbol/rotate=auto] (7.75,14.75);
+\draw [ line width=0.8pt](7.75,14.75) to[short] (9.75,14.75);
+\draw [ line width=0.8pt](9.75,14.75) to[short] (9.75,13.25);
+\draw [ line width=0.8pt](7.75,10) to[short] (8.75,10);
+\draw [ line width=0.8pt](8.75,10) to[short] (8.75,12);
+\draw [ line width=0.8pt](8.75,12) to[short] (10.75,12);
+\draw [ line width=0.8pt](9.75,13.25) to[short] (11.25,13.25);
+\draw [ line width=0.8pt](11.25,13.25) to[D] (11.25,15.75);
+\draw [ line width=0.8pt](11.25,13.25) to[short] (11.25,12);
+\draw [ line width=0.8pt](10.75,12) to[short] (13.25,12);
+\draw [ line width=0.8pt](11.25,9.5) to[short] (15,9.5);
+\draw [ line width=0.8pt](11.25,9.5) to[D] (11.25,12);
+\draw [ line width=0.8pt](13.25,12) to[short] (13.25,13.25);
+\draw [ line width=0.8pt](13.25,13.25) to[D] (13.25,15.75);
+\draw [ line width=0.8pt](13.25,9.5) to[D] (13.25,12);
+\draw [ line width=0.8pt](11.25,15.75) to[short] (16.25,15.75);
+\draw [ line width=0.8pt](16.25,15.75) to[R] (16.25,12.5);
+\draw [line width=0.8pt, short] (13.25,14.75) -- (14,15.25);
+\draw [line width=0.8pt, short] (11.25,14.75) -- (12.25,15.25);
+\draw [line width=1pt](16.25,12.5) to[L ] (16.25,9.5);
+\draw [ line width=0.8pt](15,9.5) to[short] (16.25,9.5);
+\node [font=\LARGE] at (8,13.25) {+};
+\draw [line width=0.8pt, ->, >=Stealth] (15.5,12.5) -- (15.5,11.5);
+\node [font=\normalsize] at (14.75,12.25) {$I_d_c$};
+\end{circuitikz}
+}%
+
+\end{figure}
+
+
+\item A 3-phase grid-connected voltage source converter with DC link voltage of $1000$V
+is switched using sinusoidal Pulse Width Modulation \brak{PWM}technique. If the grid phase current is $10$ A and the 3-phase complex power supplied by the converter is given by$(-4000-j3000)$ VA,then the modulation index used in sinusoidal $PWM$ is\underline{\hspace{2cm}}. (round off to two decimal places) \\ \\
+\item The steady state current flowing through the inductor of a DC-DC buck boost converter is given in the figure below. If the peak-to-peak ripple in the output voltage of the converter is $1$ V, then the value of the output capacitor, in $\mu$F,is \underline{\hspace{2cm}}. (round off to nearest integer) \\ \\ 
+
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [line width=0.9pt, ->, >=Stealth] (6.25,12.75) -- (6.25,18.25);
+\draw [line width=0.9pt, ->, >=Stealth] (6.25,13.5) -- (14.75,13.5);
+\draw [line width=0.9pt, short] (8,15) -- (10.25,16);
+\draw [line width=0.9pt, short] (7.25,15.5) -- (8,15);
+\draw [line width=0.9pt, short] (10.25,16) -- (13.5,14.5);
+\draw [line width=0.9pt, short] (13.5,14.5) -- (14.25,14.75);
+\draw [line width=0.9pt, <->, >=Stealth] (8,13.25) -- (10.25,13.25);
+\draw [line width=0.9pt, <->, >=Stealth] (10.25,13.25) -- (13.5,13.25);
+\draw [line width=0.3pt, dashed] (8,15) -- (8,13.5);
+\draw [dashed] (8,15) -- (6.25,15);
+\draw [dashed] (10.25,16) -- (6.25,16);
+\draw [dashed] (10.25,16) -- (10.25,13.5);
+\draw [dashed] (13.5,14.5) -- (13.5,13.5);
+\node [font=\normalsize] at (9,13) {20};
+\node [font=\normalsize] at (12,13) {30};
+\node [font=\normalsize] at (15.75,13.5) {Time($\mu$sec)};
+\node [font=\normalsize] at (5.25,18) {Inductor };
+\node [font=\normalsize] at (5.25,17.5) {current (A)};
+\node [font=\normalsize] at (6,16) {16};
+\node [font=\normalsize] at (6,15) {12};
+\end{circuitikz}
+}%
+
+\end{figure}
+
+\item A $280$ V,separately excited DC motor with armature resistance of $1\ohm$  and constant field excitation drives a load. The load torque is proportional to the speed. The motor draws a current of $30$A when running at a speed of $1000$rpm. Neglect frictional losses in the motor. The speed,in rpm,at which the motor will run, if an additional resistance of value $10\ohm$ is connected in series with the armature,is \underline{\hspace{2cm}}. (round off to nearest integer) \\ \\ \\
+
+
+\item A $4$-pole induction motor with inertia of $0.1kg-m^2$ drives a constant load torque of $2$Nm. The speed of the motor is increased linearly from $1000$rpm to $1500$rpm in $4$seconds as shown in the figure below. Neglect losses in the motor. The energy,in joules,consumed by the motor during the speed change is \underline{\hspace{2cm}}. (round off to nearest integer)\\ 
+
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [->, >=Stealth] (6.5,13.25) -- (6.5,18.5);
+\draw [->, >=Stealth] (6.5,13.75) -- (15,13.75);
+\draw [line width=0.9pt, short] (7,15) -- (9.5,15);
+\draw [line width=0.9pt, short] (9.5,15) -- (12,17.5);
+\draw [line width=0.9pt, short] (12,17.5) -- (14.25,17.5);
+\draw [line width=0.3pt, dashed] (12,17.5) -- (12,13.75);
+\draw [line width=0.3pt, dashed] (9.5,15) -- (9.5,13.75);
+\draw [line width=0.3pt, dashed] (12,17.5) -- (6.5,17.5);
+\node [font=\normalsize] at (5.75,17.5) {1500};
+\node [font=\normalsize] at (5.75,15) {1000};
+\node [font=\normalsize] at (9.5,13.5) {4};
+\node [font=\normalsize] at (12,13.5) {8};
+\node [font=\normalsize] at (16,13.75) {Time($\mu$sec)};
+\node [font=\normalsize] at (5.25,16) {Speed(RPM)};
+\end{circuitikz}
+}%
+
+\end{figure} 
+
+\item A star-connected $3$-phase,$400$V,$50$kVA,$50$HZ synchronous reactance of $1$\ohm per phase with negligible armature resistance. The shaft load on the motor is $10$kW while the power factor is $0.8$ leading. The loss in the motor is $2$kW. The magnitude of the per phase excitation emf of the motor, in volts,is \underline{\hspace{2cm}}. (round off to nearest integer) \\ \\ \\
+
+\item A $3$-phase,$415$V,$4$-pole,$50$Hz induction motor draws $5$ times the rated current at rated voltage at stating. It is required to bring down the starting current from the supply to $2$times of the rated current using a $3$-phase autotransformer. If the magnetizing impedance of the induction motor and on load current of the autotransformer is neglected,then the transformation ratio of the autotransformer is given by \underline{\hspace{2cm}}. (round off to two decimal places)  
+
+
+
+
+
+\end {enumerate}
+
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+%%%%%%%%%%%%%
+%start
+
+%end
+%%%%%%%%%%%%%%%
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
